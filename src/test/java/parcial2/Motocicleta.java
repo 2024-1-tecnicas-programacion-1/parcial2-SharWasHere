@@ -7,6 +7,7 @@ public class Motocicleta extends Vehiculo{
     
     public Motocicleta(String marca, String modelo, int año, TipoMotocicleta tipoMotocicleta) {
         super(marca, modelo, año);
+        this.tipomotocicleta=tipoMotocicleta;
     }
     
     public String imprimirInformacion() {
@@ -20,6 +21,6 @@ public class Motocicleta extends Vehiculo{
     }
 
     public TipoMotocicleta getTipomotocicleta() {
-        return tipomotocicleta;
+        return super.imprimirInformacion()+", tipo de motocicleta; "+tipoMotocicleta;
     }
 }
