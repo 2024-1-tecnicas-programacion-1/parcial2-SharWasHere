@@ -1,27 +1,22 @@
-
 package parcial2;
 
+public class Automovil extends Vehiculo {
 
-public class Automovil extends Vehiculo{
-    
     private int numeroPuertas;
     private TipoCombustible tipocombustible;
-    
-    public Automovil(String marca, String modelo, int año) {
-        super(marca, modelo, año);
-        
-       this.tipocombustible=tipocombustible;
-       this.numeroPuertas=numeroPuertas;
 
-       
-               
+    public Automovil(String marca, String modelo, int año, int numeroPuertas, TipoCombustible tipoCombustible) {
+        super(marca, modelo, año);
+
+        this.tipocombustible = tipocombustible;
+        this.numeroPuertas = numeroPuertas;
+
     }
 
-   
-     public String imprimirInformacion(){
-        return super.imprimirInformacion() + ", "+numeroPuertas+" puertas, combustión a "+tipocombustible;
-        
-     }
+    public String imprimirInformacion() {
+        return super.imprimirInformacion() + ", " + numeroPuertas + " puertas, combustión a " + tipocombustible;
+
+    }
 
     public int getNumeroPuertas() {
         return numeroPuertas;
@@ -38,5 +33,5 @@ public class Automovil extends Vehiculo{
     public void setTipocombustible(TipoCombustible tipocombustible) {
         this.tipocombustible = tipocombustible;
     }
-    
+
 }
